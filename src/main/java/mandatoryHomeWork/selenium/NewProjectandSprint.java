@@ -63,11 +63,11 @@ id, JIRA status as Todo and Assignee as Unassigned. ---> pending
 		//driver.get("https://start.atlassian.com/");
 		driver.get("https://comparecheck.atlassian.net/");	
 		
-		driver.findElement(By.name("username")).sendKeys("bharathimanohar0696@gmail.com");
+		driver.findElement(By.name("username")).sendKeys("aravindsvb@gmail.com");
 		
 		driver.findElement(By.id("login-submit")).click();
 		
-		driver.findElement(By.id("password")).sendKeys("Bharathi@1996");
+		driver.findElement(By.id("password")).sendKeys("xyz123");
 		
 		driver.findElement(By.xpath("//span[text()='Log in']")).click();
 		
