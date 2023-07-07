@@ -26,8 +26,8 @@ public class HackerrankGameOfTwoStacks {
 	            }
 	            if(val<maxSum){
 	                val=val+b.get(right);
-	                count++;
 	                right++;
+	                count++;
 	            }
 	            else{
 	                return count-1;
