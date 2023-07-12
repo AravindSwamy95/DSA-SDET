@@ -1,1 +1,216 @@
+Description: Verify if a user can book an Ola cab without logging in.
+Steps:
+Launch the Ola app or website.
+Select a pickup location and destination.
+Choose a cab type.
+Proceed with the booking process without logging in.
+Verify if the booking is successful and a confirmation is received.
+Test Case: Booking Outside City Limits
 
+Description: Ensure that the system does not allow booking a cab outside the city limits.
+Steps:
+Select a pickup location outside the city limits.
+Choose a destination within the city limits.
+Verify if an appropriate error message is displayed, preventing the booking.
+Test Case: Booking to a Foreign Country
+
+Description: Verify if a user can book an Ola cab from the current location to a destination outside the country.
+Steps:
+Select the current location.
+Choose a destination outside the country.
+Verify if an appropriate message is displayed, indicating that international bookings are not available.
+Test Case: Booking for Immediate Pickup
+
+Description: Ensure that a cab can be booked for immediate pickup.
+Steps:
+Select a pickup location and destination.
+Choose the "Now" option for pickup time.
+Verify if a cab is allocated promptly and a confirmation is received.
+Test Case: Scheduled Booking during Peak Hours or Midnight
+
+Description: Verify if a scheduled booking for later is successful, especially during peak hours or midnight.
+Steps:
+Select a pickup location and destination.
+Choose the "Schedule for later" option.
+Set the desired pickup time during peak hours or midnight.
+Verify if the scheduled booking is successful and a confirmation is received.
+Test Case: Insufficient Ola Money Balance
+
+Description: Test the behavior when "Pay by Ola Money" is chosen, but there is insufficient balance.
+Steps:
+Select a pickup location and destination.
+Choose the "Pay by Ola Money" option.
+Ensure that the Ola Money balance is zero or below the fare amount.
+Verify if an appropriate error message is displayed, indicating insufficient balance.
+Test Case: Invalid Coupon Code
+
+Description: Test the handling of an invalid coupon code during booking.
+Steps:
+Select a pickup location and destination.
+Enter an invalid coupon code.
+Verify if the coupon code is not applied and the fare remains unchanged.
+Test Case: Junk Values in From and To Locations
+
+Description: Verify if the system handles junk or invalid values in the From and To locations correctly.
+Steps:
+Enter random or nonsensical values in the From and To locations.
+Verify if an appropriate error message is displayed, indicating invalid locations.
+Test Case: Booking without From and To Destinations
+
+Description: Verify if the system enforces mandatory selection of From and To destinations.
+Steps:
+Proceed with the booking process without selecting the From and To destinations.
+Verify if an appropriate error message is displayed, indicating missing locations.
+Test Case: Simultaneous Booking for All Available Rides
+
+Description: Test the system's ability to handle multiple bookings for the same destination simultaneously.
+Steps:
+Select a pickup location and destination.
+Initiate simultaneous bookings for all available rides (Micro, Mini, Sedan, etc.).
+Verify if each booking is processed successfully and a separate confirmation is received for each ride.
+Test Case: Continuous Booking and Cancellation
+
+Description: Test the system's stability and performance when continuously booking and canceling rides.
+Steps:
+Continuously book and cancel rides multiple times simultaneously.
+Verify if the system can handle the continuous requests without any errors or crashes.
+Test Case: Maximum Package Hours for Rental Cars
+
+Description: Verify if a rental car can be booked with the maximum package hours.
+Steps:
+Select a pickup location and destination for a rental car.
+Choose the maximum allowed package hours.
+Verify if the booking is successful and the duration of the rental car is correct.
+Test Case: Ride History in "Your Rides" Page
+
+Description: Verify if the "Your Rides" page displays the accurate ride history.
+Steps:
+Navigate to the "Your Rides" page.
+Check if all the previous rides, including completed, ongoing, and canceled, are displayed correctly with the relevant details.
+Test Case: Re-booking Canceled Rides
+
+Description: Verify if a previously canceled ride can be re-booked.
+Steps:
+Access the ride history in the "Your Rides" page.
+Select a previously canceled ride.
+Initiate the re-booking process.
+Verify if the details of the canceled ride are pre-filled correctly, simplifying the re-booking process.
+Test Case: Searching Ola Cabs without Entering Locations
+
+Description: Verify if the system provides relevant search results based on the user's current location.
+Steps:
+Access the Ola app or website without entering any specific locations.
+Verify if the system displays nearby available cabs based on the user's current location.
+Globalization:
+
+Test Case: Booking from a Different Time Zone
+
+Description: Verify if a user can book an Ola cab for an Indian location from a USA time zone.
+Steps:
+Set the device's time zone to a USA time zone.
+Select a pickup location in India.
+Choose the desired cab type and proceed with the booking.
+Verify if the booking time is adjusted correctly based on the time zone difference.
+Test Case: Payment in Different Currency
+
+Description: Verify if a user can pay in USD for an Indian trip and if the system applies the currency conversion correctly.
+Steps:
+Choose the "Pay in USD" option during the payment process.
+Verify if the fare amount is converted accurately to USD based on the prevailing exchange rate.
+Compatibility and Platform:
+
+Test Case: Seamless Transition between Mobile App and Browser
+
+Description: Verify if a user can start the booking process in the mobile app and continue with the remaining details on a browser.
+Steps:
+Start the booking process in the Ola mobile app.
+After selecting the pickup location, switch to a browser on the same device.
+Continue with the remaining details and complete the booking process.
+Verify if the details are synchronized and the booking is successful.
+Test Case: Compatibility between Different Versions of Ola App
+
+Description: Verify if the booking details can be seamlessly resumed between an updated version of the Ola app in Chrome and an older version as a mobile app.
+Steps:
+Install an updated version of the Ola app in Chrome and an older version on a mobile device.
+Initiate the booking process in Chrome and proceed with selecting the pickup location.
+Switch to the Ola app on the mobile device.
+Verify if the booking details are synchronized and can be resumed from the point where it was left in Chrome.
+Accessibility:
+
+Test Case: Adding Locations via Adjusting Google Maps
+
+Description: Verify if visually impaired users can add the "From" and "To" locations by adjusting Google Maps.
+Steps:
+Enable accessibility features for visually impaired users.
+Access the Ola app or website and start the booking process.
+Use the accessibility features to adjust the map and select the pickup and destination locations.
+Verify if the selected locations are accurately reflected in the booking details.
+Test Case: Text-to-Speech Input for "From" and "To" Destinations
+
+Description: Verify if users can enter the "From" and "To" destinations via text-to-speech functionality.
+Steps:
+Enable text-to-speech input functionality on the device.
+Access the Ola app or website and initiate the booking process.
+Use the text-to-speech input to provide the pickup and destination locations.
+Verify if the system accurately interprets and processes the spoken input.
+Test Case: Timely Display of Cab Details
+
+Description: Verify if the cab details are displayed within a reasonable time frame after booking.
+Steps:
+Select a pickup location and destination.
+Proceed with the booking process.
+Observe the screen and verify if the cab details, including driver information and ETA, are displayed promptly (e.g., within 60 seconds to 2 minutes).
+Test Case: Canceling Ride while Searching for Nearby Cabs
+
+Description: Verify if users can cancel a ride while searching for nearby available cabs.
+Steps:
+Initiate the process of searching for nearby cabs without confirming a specific ride.
+While the system is searching, attempt to cancel the ride.
+Verify if the cancellation is processed correctly, and the search is terminated.
+Test Case: Handling Network Connectivity Loss during Booking
+
+Description: Test the system's behavior when there is a loss of network connectivity during the booking process.
+Steps:
+Start the booking process with a stable network connection.
+During any stage of the booking process, intentionally disconnect the device from the network.
+Restore the network connectivity and verify if the booking process resumes from where it was left without losing the entered details.
+Test Case: Locating a Destination via Google Maps without GPS Enabled
+
+Description: Verify if users can locate a destination via Google Maps even when GPS is not enabled on the device.
+Steps:
+Disable GPS functionality on the device.
+Access the Ola app or website and start the booking process.
+Use the Google Maps integration to search and select a destination.
+Verify if the system accurately identifies and applies the selected destination without relying on GPS coordinates.
+Test Case: Booking with Weak Network Strength
+
+Description: Test the system's behavior when attempting to book a cab with weak network strength.
+Steps:
+Start the booking process with a device having a weak network signal.
+Proceed with the booking process and verify if the system can handle the request appropriately despite the weak network strength.
+API:
+
+Test Case: Booking a Cab through Unauthenticated Endpoints
+
+Description: Verify if it's possible to book a cab through the respective API endpoints without any authorization.
+Steps:
+Make a request to the booking API endpoint without providing any authentication credentials.
+Verify if the system allows the booking and returns the appropriate response.
+Test Case: Providing From and To Locations as Latitude and Longitude
+
+Description: Verify if the system can handle From and To locations provided as latitude and longitude coordinates.
+Steps:
+Make a booking request to the API endpoint with the From and To locations provided as latitude and longitude coordinates.
+Verify if the booking is successful and the ride details are accurate.
+Test Case: Retrieving Available Cabs through GET Call
+
+Description: Verify if the available cabs can be retrieved successfully through the API's GET call.
+Steps:
+Make a GET request to the API endpoint for retrieving available cabs.
+Verify if the response contains accurate information about the available cabs, including types and availability.
+Test Case: Updating Booked Ride through PUT Call
+
+Description: Verify if the system allows updating the details of a booked ride through the PUT call.
+Steps:
+Make a PUT request to the API endpoint for updating a booked ride with new details.
+Verify if the changes are applied correctly to the ride details
